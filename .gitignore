@@ -13,3 +13,7 @@ target
 
 # Spring Tool Suite Files
 .springBeans
+
+# IntelliJ Files
+*.iml
+.idea
