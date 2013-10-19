@@ -17,3 +17,6 @@ target
 # IntelliJ Files
 *.iml
 .idea
+
+# Gradle Files
+build
