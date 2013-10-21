@@ -13,6 +13,10 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 public class WebConfig {
     @Bean
     public InternalResourceViewResolver viewResolver() {
+        String blah;
+        blah = "dog";
+//        log.info("WebConfig.viewResolver()");
+        System.out.println("HERE!!!");
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
         resolver.setPrefix("/WEB-INF/view/");
         resolver.setSuffix(".jsp");

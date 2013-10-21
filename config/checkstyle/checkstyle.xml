@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+          "-//Puppy Crawl//DTD Check Configuration 1.1//EN"
+          "http://www.puppycrawl.com/dtds/configuration_1_1.dtd">
+
+<module name="Checker">
+    <module name="StrictDuplicateCode">
+        <property name="min"            value="12"/>
+        <property name="fileExtensions" value=""/>
+    </module>
+
+    <!-- Checks that each Java package has a Javadoc file used for commenting. !-->
+    <!-- See http://checkstyle.sourceforge.net/config_javadoc.html#JavadocPackage !-->
+    <module name="JavadocPackage">
+        <property name="allowLegacy" value="false"/>
+    </module>
+
+    <!-- Checks whether files end with a new line.                        !-->
+    <!-- See http://checkstyle.sf.net/config_misc.html#NewlineAtEndOfFile !-->
+    <module name="NewlineAtEndOfFile">
+        <property name="lineSeparator"  value="system"/>
+        <property name="fileExtensions" value="*.*"/>
+    </module>
+
+    <!-- Checks that property files contain the same keys.         !-->
+    <!-- See http://checkstyle.sf.net/config_misc.html#Translation !-->
+    <module name="Translation">
+        <property name="fileExtensions" value="properties"/>
+    </module>
+
+    <!-- Checks for long source files. !-->
+    <!-- See http://checkstyle.sf.net/config_sizes.html !-->
+    <module name="FileLength">
+        <property name="max"            value="2000"/>
+        <property name="fileExtensions" value=""/>
+    </module>
+
+    <!-- Checks that there are no tab characters ('\t') in the source code. !-->
+    <!-- See http://checkstyle.sourceforge.net/config_whitespace.html#FileTabCharacter !-->
+    <module name="FileTabCharacter">
+        <property name="eachLine"       value="false"/>
+        <property name="fileExtensions" value=""/>
+    </module>
+</module>
