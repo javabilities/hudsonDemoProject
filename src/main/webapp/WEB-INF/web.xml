@@ -6,7 +6,7 @@
     <display-name>Hudson Demo Project</display-name>
 
     <servlet>
-        <servlet-name>demo</servlet-name>
+        <servlet-name>Spring MVC Dispatcher Servlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextClass</param-name>
@@ -19,7 +19,7 @@
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>demo</servlet-name>
+        <servlet-name>Spring MVC Dispatcher Servlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
