@@ -17,6 +17,12 @@ public class WebConfig {
 
     @Bean
     public InternalResourceViewResolver viewResolver() {
+        logger.trace("TRACE Level");
+        logger.debug("DEBUG Level");
+        logger.info("INFO Level");
+        logger.warn("WARN Level");
+        logger.error("ERROR Level");
+
         logger.info("WebConfig.viewResolver()");
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
         resolver.setPrefix("/WEB-INF/view/");
