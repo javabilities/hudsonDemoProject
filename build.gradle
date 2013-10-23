@@ -32,6 +32,9 @@ dependencies {
              'org.slf4j:jcl-over-slf4j:1.7.4',
              'ch.qos.logback:logback-classic:1.0.13')
 
+    testCompile ('junit:junit:4.4',
+                 'org.springframework:spring-test:3.2.2.RELEASE')
+
     runtime ('javax.servlet:jstl:1.1.2')
 }
 
