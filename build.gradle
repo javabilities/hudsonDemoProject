@@ -48,3 +48,8 @@ jettyRun {
 task wrapper(type: Wrapper) {
     gradleVersion = '1.8'
 }
+
+// Force the test task to always run so the Hudson job doesn't fail
+task test {
+    outputs.upToDateWhen { false }
+}
