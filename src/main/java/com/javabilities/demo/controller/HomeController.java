@@ -12,6 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
     private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
+    /**
+     * loadHomePage
+     *
+     * @param m
+     * @return
+     */
 //    @RequestMapping("home")
     public String loadHomePage(Model m) {
         logger.info("HomeController.loadHomePage()");
